@@ -1,0 +1,19 @@
+{
+  "name": "gulp-intro",
+  "version": "1.0.0",
+  "description": "learn gulp",
+  "main": "index.js",
+  "repository": "git@github.com:baejoonsoo/gulp_intro.git",
+  "author": "baejoonsoo <artns25@dsm.hs.kr>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0"
+  }
+}
