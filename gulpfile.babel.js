@@ -15,8 +15,11 @@ const pug = () =>
 
 const clean = () => del(['build']);
 
+const webServer = () =>
+  gulp.src('build').pipe(ws({ livereload: true, open: true }));
+
 const prepare = gulp.series([clean]);
-
 const assets = gulp.series([pug]);
+const postDev = gulp.series([webServer]);
 
-export const dev = gulp.series([prepare, assets]);
+export const dev = gulp.series([prepare, assets, postDev]);
