@@ -1,19 +1,19 @@
 {
-  "name": "gulp-intro",
+  "name": "supergulp",
   "version": "1.0.0",
-  "description": "learn gulp",
-  "main": "index.js",
-  "repository": "git@github.com:baejoonsoo/gulp_intro.git",
-  "author": "baejoonsoo <artns25@dsm.hs.kr>",
+  "description": "Learn Gulp by building an awesome development environment",
+  "repository": "https://github.com/baejoonsoo/gulp-study",
+  "author": "Nicolás Serrano Arévalo <itnico.las.me@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "gulp": "^4.0.2",
-    "@babel/core": "^7.17.5",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/register": "^7.17.0"
+    "gulp-pug": "^4.0.1"
   }
 }

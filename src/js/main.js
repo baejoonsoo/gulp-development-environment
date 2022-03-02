@@ -1,7 +1,6 @@
 import { random } from './util';
 
-const randomOne = random(10);
+const rOne = random(10);
+const rTwo = random(20);
 
-const randomTwo = random(20);
-
-console.log(randomOne, randomTwo);
+console.log(`${rOne} ${rTwo}`);
