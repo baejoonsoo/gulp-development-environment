@@ -29,6 +29,7 @@ const webServer = () =>
 
 const watch = () => {
   gulp.watch(routes.pug.watch, pug);
+  gulp.watch(routes.img.src, img);
 };
 
 const prepare = gulp.series([clean, img]);
