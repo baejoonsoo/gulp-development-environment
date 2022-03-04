@@ -28,7 +28,7 @@ const routes = {
   },
   js: {
     src: 'src/js/main.js',
-    watch: 'src/js/*.js',
+    watch: 'src/js/**/*.js',
     dest: 'build/js',
   },
 };
@@ -51,7 +51,7 @@ const js = () =>
       bro({
         transform: [
           babelify.configure({ presets: ['@babel/preset-env'] }),
-          [('uglifyify', { global: true })],
+          ['uglifyify', { global: true }],
         ],
       }),
     )
